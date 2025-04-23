@@ -5,38 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ketering All in One</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
+      margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
-      background: #111;
+      background-color: #000;
       color: #fff;
-      padding: 20px;
-      line-height: 1.6;
+      display: flex;
+      justify-content: center;
     }
+
     .container {
-      max-width: 800px;
-      margin: 0 auto;
-      background: #222;
-      padding: 30px;
-      border-radius: 10px;
-    }
-    img {
-      display: block;
-      margin: 0 auto 20px;
-      width: 200px;
-    }
-    h1, h2 {
+      width: 100%;
+      max-width: 700px;
+      padding: 40px 20px;
       text-align: center;
+    }
+
+    img {
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
       color: #d4af37;
+      margin: 0;
     }
-    ul {
-      padding-left: 20px;
-    }
-    .menu {
+
+    h2 {
+      font-size: 1.4rem;
+      color: #d4af37;
+      margin-top: 10px;
       margin-bottom: 30px;
     }
+
     .contact {
-      margin: 30px 0;
-      text-align: center;
+      margin-bottom: 30px;
+      font-size: 1rem;
+    }
+
+    .description {
+      margin-bottom: 30px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .menu {
+      margin-bottom: 40px;
+    }
+
+    .menu-title {
+      font-size: 1.3rem;
+      color: #d4af37;
+      margin-bottom: 10px;
+    }
+
+    .menu-item {
+      margin: 5px 0;
+    }
+
+    .price {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #d4af37;
+    }
+
+    .note {
+      font-style: italic;
+      color: #aaa;
     }
   </style>
 </head>
@@ -44,81 +85,79 @@
   <div class="container">
     <img src="logo.jpeg" alt="Ketering Logo" />
     <h1>KETERING</h1>
-    <h2>ALL IN ONE!</h2>
+    <h2>ALL IN ONE</h2>
 
     <div class="contact">
-      <p>TELEFON: 0605333125</p>
-      <p>MAIL: Igorradosavljevic88@gmail.com</p>
+      TELEFON: 0605333125<br />
+      MAIL: Igorradosavljevic88@gmail.com
     </div>
 
-    <p>Radimo sve vrste proslava i keteringa. Dostavljamo ručak na vašu adresu. Finger food preko 20 osoba.</p>
-    <p>Tri osnovna menija za Švedski sto.</p>
-
-    <div class="menu">
-      <h3>Meni 1:</h3>
-      <ul>
-        <li>Kiflice sir</li>
-        <li>Pite sir</li>
-        <li>Suhomesnati proizvodi (pršuta, sv. vrat, kulen)</li>
-        <li>Domaći kravlji sirevi</li>
-        <li>Ruska salata</li>
-        <li>Salata paradajz, krastavac</li>
-        <li>Vedžis krompir</li>
-        <li>Ćevapi</li>
-        <li>Rolovano belo meso</li>
-        <li>Kobasice</li>
-      </ul>
-      <p><strong>Cena po osobi: 1250 RSD</strong></p>
+    <div class="description">
+      Radimo sve vrste proslava i keteringa.<br />
+      Dostavljamo ručak na vašu adresu.<br />
+      Finger food preko 20 osoba.<br />
+      Tri osnovna menija za Švedski sto.
     </div>
 
     <div class="menu">
-      <h3>Meni 2:</h3>
-      <ul>
-        <li>Kiflice</li>
-        <li>Pitice sir</li>
-        <li>Rolat od spanaća</li>
-        <li>Rolovana mocarela sa pršutom na rukoli prelivena acetom</li>
-        <li>Suhomesnati proizvodi (pršuta, sv. vrat, kulen)</li>
-        <li>Strani sirevi (parmezan, gorgonzola)</li>
-        <li>Ruska salata</li>
-        <li>Grčka salata</li>
-        <li>Gratiniran krompir</li>
-        <li>Raviole punjene rikotom u sosu od sušenog čerija i paradajza</li>
-        <li>Ćevapi</li>
-        <li>Belo rolovano meso</li>
-        <li>Kobasice</li>
-        <li>Gambori tempura</li>
-      </ul>
-      <p><strong>Cena po osobi: 1650 RSD</strong></p>
+      <div class="menu-title">Meni 1:</div>
+      <div class="menu-item">Kiflice sir</div>
+      <div class="menu-item">Pite sir</div>
+      <div class="menu-item">Suhomesnati proizvodi (pršuta, sv. vrat, kulen)</div>
+      <div class="menu-item">Domaći kravlji sirevi</div>
+      <div class="menu-item">Ruska salata</div>
+      <div class="menu-item">Salata paradajz, krastavac</div>
+      <div class="menu-item">Vedžis krompir</div>
+      <div class="menu-item">Ćevapi</div>
+      <div class="menu-item">Rolovano belo meso</div>
+      <div class="menu-item">Kobasice</div>
+      <div class="price">Cena po osobi: 1250 RSD</div>
     </div>
 
     <div class="menu">
-      <h3>Meni 3:</h3>
-      <ul>
-        <li>Kiflice</li>
-        <li>Pite sir</li>
-        <li>Projice</li>
-        <li>Burata sa čerijem, rukolom i domaćim pestom</li>
-        <li>Kroketi od rikote sira sa ajoli sosom</li>
-        <li>Suhomesnati proizvodi (pršuta, kulen, sv. vrat)</li>
-        <li>Strani sirevi (parmezan, gorgonzola)</li>
-        <li>Ruska salata</li>
-        <li>Grčka salata</li>
-        <li>Citrusna salata</li>
-        <li>Soitirane pečurke u marinadi</li>
-        <li>Gratiniran krompir</li>
-        <li>Rižoto sa pršutom i tartufima, parmezan</li>
-        <li>Raviole punjene montasiom u sosu od sušenog čerija i paradajza</li>
-        <li>Ćevapi</li>
-        <li>Rolovano pileće belo</li>
-        <li>Glazirana svinjska rebra u medu i senfu</li>
-        <li>Brancin fileti</li>
-        <li>Gambori tempura</li>
-      </ul>
-      <p><strong>Cena po osobi: 2000 RSD</strong></p>
+      <div class="menu-title">Meni 2:</div>
+      <div class="menu-item">Kiflice</div>
+      <div class="menu-item">Pitice sir</div>
+      <div class="menu-item">Rolat od spanaća</div>
+      <div class="menu-item">Rolovana mocarela sa pršutom na rukoli prelivena acetom</div>
+      <div class="menu-item">Suhomesnati proizvodi (pršuta, sv. vrat, kulen)</div>
+      <div class="menu-item">Strani sirevi (parmezan, gorgonzola)</div>
+      <div class="menu-item">Ruska salata</div>
+      <div class="menu-item">Grčka salata</div>
+      <div class="menu-item">Gratiniran krompir</div>
+      <div class="menu-item">Raviole punjene rikotom u sosu od sušenog čerija i paradajza</div>
+      <div class="menu-item">Ćevapi</div>
+      <div class="menu-item">Belo rolovano meso</div>
+      <div class="menu-item">Kobasice</div>
+      <div class="menu-item">Gambori tempura</div>
+      <div class="price">Cena po osobi: 1650 RSD</div>
     </div>
 
-    <p><em>Mogućnost promene menija po dogovoru.</em></p>
+    <div class="menu">
+      <div class="menu-title">Meni 3:</div>
+      <div class="menu-item">Kiflice</div>
+      <div class="menu-item">Pite sir</div>
+      <div class="menu-item">Projice</div>
+      <div class="menu-item">Burata sa čerijem, rukolom i domaćim pestom</div>
+      <div class="menu-item">Kroketi od rikote sira sa ajoli sosom</div>
+      <div class="menu-item">Suhomesnati proizvodi (pršuta, kulen, sv. vrat)</div>
+      <div class="menu-item">Strani sirevi (parmezan, gorgonzola)</div>
+      <div class="menu-item">Ruska salata</div>
+      <div class="menu-item">Grčka salata</div>
+      <div class="menu-item">Citrusna salata</div>
+      <div class="menu-item">Sotirane peĉurke u marinadi</div>
+      <div class="menu-item">Gratiniran krompir</div>
+      <div class="menu-item">Rižoto sa pršutom i tartufima, parmezan</div>
+      <div class="menu-item">Raviole punjene montasiom u sosu od sušenog čerija i paradajza</div>
+      <div class="menu-item">Ćevapi</div>
+      <div class="menu-item">Rolovano pileće belo</div>
+      <div class="menu-item">Glazirana sv. rebra u medu i senfu</div>
+      <div class="menu-item">Brancin fileti</div>
+      <div class="menu-item">Gambori tempura</div>
+      <div class="price">Cena po osobi: 2000 RSD</div>
+    </div>
+
+    <div class="note">Mogućnost promene menija po dogovoru.</div>
   </div>
 </body>
 </html>
